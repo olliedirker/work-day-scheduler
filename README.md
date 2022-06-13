@@ -1,1 +1,2 @@
 # Work Day Scheduler Starter Code
+uses javascript to run through each time of the day by hour and assignes ids and classes based on the css file of the pre assignment info and then added new ones wiht JS to color them based on the hour of the day. added certain css elements, used javascript to make the counter on the top of the page and set it to be a live per second clock.
