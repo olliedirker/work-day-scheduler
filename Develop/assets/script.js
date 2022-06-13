@@ -1,7 +1,8 @@
 
+//variable that formats the date and time
 var currentDate = moment().format("DD MM YYYY hh:mm:ss");
 var colorTime = moment().format("k")
-
+//function that deploy the counting every second as well as 
 $(document).ready(function () {
     setInterval(function () {
         currentDate = moment().format("DD MM YYYY hh:mm:ss");
@@ -11,7 +12,7 @@ $(document).ready(function () {
     function timeShade() {
         $(".time-block").each(function () {
             var hour = parseInt($(this).closest(".row").attr("id"))
-
+//assignes the css features to time the colors of the day
             if (hour > colorTime) {
                 $(this).addClass("future")
             } else if (hour === colorTime) {
@@ -40,6 +41,6 @@ $(document).ready(function () {
           $(this).children(".description").val(planInput);
         };
       })
-
+//executes timeShade for the first time
     timeShade()
 });
